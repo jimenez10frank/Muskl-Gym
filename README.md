@@ -1,10 +1,10 @@
-#  **Muskl** - Gym Membership Platform
+#  **Muskl** - Gym Membership Platform(Under Construction)
 
 **Muskl** is a web application designed to simplify gym membership management and enhance your fitness journey. Sign up for a membership, manage your subscription, and purchase your favorite gym essentials all in one place. Experience seamless payments powered by **Stripe**.
 
 ---
 
-### 🚀 **Features**
+### 🚀 **Features**(working on)
 
 - **💪 Membership Plans**: Choose from different gym membership tiers.
 - **🛒 Gym Products**: Shop for supplements, gear, and more.
