@@ -1,0 +1,38 @@
+/* homepage css */
+
+.container {
+    margin-top: 200px;
+    background-color: black;
+    max-width: 100%;
+}
+
+.carousel-item img {
+    height: 600px; 
+    width: 10px;
+    object-fit: cover; /* Ensures the image scales properly without stretching */
+    margin: auto;
+
+}
+
+.carousel-caption  {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+section {
+    display: flex;
+    justify-items: center;
+    align-items: space-between;
+    padding: 50px;
+    flex-direction: row;
+    margin-left: 20%;;
+    margin-right: 20%;
+    flex-wrap: wrap;
+}
+
+section h1 {
+    margin-bottom: 40px;
+}
