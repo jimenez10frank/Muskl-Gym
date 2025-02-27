@@ -12,8 +12,8 @@
   <link rel="stylesheet" href="../CSS/navbars.css">
   <!-- for the body -->
   <link rel="stylesheet" href="../CSS/body.css">
-  <!-- membership content -->
-  <link rel="stylesheet" href="../CSS/homepage.css">
+  <!-- homepage content -->
+  <link rel="stylesheet" href="../CSS/membership.css">
   <!-- footer styling -->
   <link rel="stylesheet" href="../CSS/footer.css">
   
@@ -39,7 +39,7 @@
             <a class="nav-link active" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../HTML/memberships.php">Memberships</a>
+            <a class="nav-link" href="#">Memberships</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Products</a>
@@ -68,70 +68,87 @@
     </div>
   </nav>
   <!-- header -->
-  <header class="text-center text-white" id="header">
-    <h1>Elevate Your Strength, Unleash Your Potential.</h1>
-    <p>Join us now and get the best membership deals!</p>
-    <button class="btn btn-light">Get Membership Now!</button>
-  </header>
-
-  <!-- quotes -->
-  <div class="section">
+   <header>
+     <div class="menu">
+     <title>Memberships</title>
+      <h1>Membership Plans</h1>
+      <p>Choose the membership that best suits your needs and start your fitness journey today!</p>
+      </div>
+    <!-- Basic -->
+     <div class="memberships">
     <section>
-      <h1>Muskl – Where Strength Meets Lifestyle.</h1>
-      <p>At Muskl, we redefine fitness by combining state-of-the-art training with premium comfort. 
-        Our cutting-edge 2500m² facility is designed to push your limits, offering expert-led classes in strength training, HIIT, mobility, and more. 
-        Every membership includes unlimited access to our elite equipment, group sessions, and recovery zones. 
-        Indulge in luxury amenities like private lockers, towel service, and a fully-equipped wellness area. 
-        Whether you're chasing performance or balance, Muskl ensures your fitness journey is seamless, motivating, and results-driven.
-      </p>
+        <div class="membership-plan">
+          <h3>comfort</h3>
+          <p>Access to all gym equipment</p>
+          <p>Access to group classes</p>
+          <p>Locker room access</p>
+          <p>Price: $50/month</p>
+          <button class="sign-up">Sign Up</button>
     </section>
-  </div>
+    <!-- basic -->
+    <section>
+      <div class="membership-plan">
+          <h6>Most Chosen!</h6>
+          <h3>Basic</h3>
+          <p>Access to all gym equipment</p>
+          <p>Access to group classes</p>
+          <p>Locker room access</p>
+          <p>Price: $50/month</p>
+          <button class="sign-up1">Sign Up</button>
+          </div>
+          </section>
+          <!-- Pro -->
+          <section>
+          <div class="membership-plan">
+          <h3>Pro</h3>
+          <p>Access to all gym equipment</p>
+          <p>Access to group classes</p>
+          <p>Locker room access</p>
+          <p>Price: $50/month</p>
+          <button class="sign-up">Sign Up</button>
+          </div>
+          </section>
+          </div>
+   </header>
+  <!-- quotes -->
+   <section class="comparison">
+    <h2>Compare Memberships</h2>
+    <table>
+      <tr>
+        <th>Features</th>
+        <th>Comfort</th>
+        <th>Basic</th>
+        <th>Pro</th>
+      </tr>
+      <tr>
+        <td>Access to all gym equipment</td>
+        <td><i class="fas fa-check"></i></td>
+        <td><i class="fas fa-check"></i></td>
+        <td><i class="fas fa-check"></i></td>
+      </tr>
+      <tr>
+        <td>Access to group classes</td>
+        <td><i class="fas fa-check"></i></td>
+        <td><i class="fas fa-check"></i></td>
+        <td><i class="fas fa-check"></i></td>
+      </tr>
+      <tr>
+        <td>Locker room access</td>
+        <td><i class="fas fa-check"></i></td>
+        <td><i class="fas fa-check"></i></td>
+        <td><i class="fas fa-check"></i></td>
+      </tr>
+      <tr>
+        <td>Price</td>
+        <td>$50/month</td>
+        <td>$50/month</td>
+        <td>$50/month</td>
+      </tr>
+    </table>
 
+   </section>   
 
-
-  <!-- slideshows -->
-  <div id="carouselExampleCaptions" class="carousel slide sectieCarousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="../Assets/Pictures/workout1.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Strength Starts Here</h5>
-          <p><strong>Push your limits and build the strongest version of yourself. 
-            Our state-of-the-art equipment and expert trainers are here to fuel your fitness journey.</strong></p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="../Assets/Pictures/shower.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Refresh & Recharge</h5>
-          <p><strong>Elevate your post-workout experience with our premium showers and wellness facilities.
-            Because recovery is just as important as the workout.</strong></p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="../Assets/Pictures/workout3.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Recover Like a Pro</h5>
-          <p><strong>Maximize your performance with our dedicated recovery zone. 
-            From massage tools to guided relaxation, we help you stay at your best.</strong></p>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-
+  <!-- Footer -->
   <div class="footercontainer">
     <footer>
       <!-- Muskl Section -->

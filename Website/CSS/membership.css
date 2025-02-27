@@ -1,0 +1,87 @@
+/* styling for the memberships */
+.memberships {
+    display: flex;
+    justify-items: center;
+    align-content: center;
+    align-items: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px;
+    
+}
+section {
+    display: flex;
+    align-items: 10px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: space-between;
+    box-shadow: 5px 5px 20px 10px grey;
+    margin: auto;
+    padding: 20px;
+    
+}
+.menu {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: space-between;
+    flex-wrap: wrap;
+}
+.membership-plan {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section:nth-child(2) {
+    background-color: black;
+    color: white;
+}
+
+/* buttons styling */
+.sign-up {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+.sign-up1 {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+h6 {
+    color: white;
+    border: 1px solid red;
+    border-radius: 5px;
+    background-color: red;
+}
+
+/* table for comparing memberships */
+.comparison {
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 50px;
+
+}
+.comparison table{
+    width: 100%;
+}
+.comparison td, th {
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 8px;
+    text-align: center;
+}
