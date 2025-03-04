@@ -36,10 +36,10 @@
         <a class="navbar-brand col-lg-3 me-0" href="#"><i class="fa-solid fa-person-running fa-2xl" id="logo"></i></a>
         <ul class="navbar-nav col-lg-6 justify-content-lg-center">
           <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Memberships</a>
+            <a class="nav-link active" href="#">Memberships</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Products</a>
@@ -114,54 +114,81 @@
   <section class="comparison">
     <h2>Compare Memberships</h2>
     <table>
-      <tr>
-        <th>Features</th>
-        <th>Comfort</th>
-        <th>Basic</th>
-        <th>Pro</th>
-      </tr>
-      <tr>
-        <td>Access to all gym equipment</td>
-        <td><i class="fas fa-check"></i></td>
-        <td><i class="fas fa-check"></i></td>
-        <td><i class="fas fa-check"></i></td>
-      </tr>
-      <tr>
-        <td>Access to group classes</td>
-        <td><i class="fas fa-check"></i></td>
-        <td><i class="fas fa-check"></i></td>
-        <td><i class="fas fa-check"></i></td>
-      </tr>
-      <tr>
-        <td>Locker room access</td>
-        <td><i class="fas fa-check"></i></td>
-        <td><i class="fas fa-check"></i></td>
-        <td><i class="fas fa-check"></i></td>
-      </tr>
-      <tr>
-        <td>Price</td>
-        <td>$50/month</td>
-        <td>$50/month</td>
-        <td>$50/month</td>
-      </tr>
+        <tr>
+            <th>Features</th>
+            <th>Basic</th>
+            <th>Comfort</th>
+            <th>Pro</th>
+        </tr>
+        <tr>
+            <td>Access to all gym equipment</td>
+            <td><i class="fas fa-check"></i></td>
+            <td><i class="fas fa-check"></i></td>
+            <td><i class="fas fa-check"></i></td>
+        </tr>
+        <tr>
+            <td>Access to group classes</td>
+            <td><i class="fas fa-times"></i></td>
+            <td><i class="fas fa-check"></i></td>
+            <td><i class="fas fa-check"></i></td>
+        </tr>
+        <tr>
+            <td>Personal trainer sessions</td>
+            <td><i class="fas fa-times"></i></td>
+            <td>2 sessions/month</td>
+            <td>Unlimited</td>
+        </tr>
+        <tr>
+            <td>Sauna & spa access</td>
+            <td><i class="fas fa-times"></i></td>
+            <td><i class="fas fa-check"></i></td>
+            <td><i class="fas fa-check"></i></td>
+        </tr>
+        <tr>
+            <td>Locker room access</td>
+            <td>Standard lockers</td>
+            <td>Premium lockers</td>
+            <td>Private locker & laundry service</td>
+        </tr>
+        <tr>
+            <td>Guest passes</td>
+            <td>None</td>
+            <td>2 per month</td>
+            <td>Unlimited</td>
+        </tr>
+        <tr>
+            <td>Nutrition & diet plan</td>
+            <td><i class="fas fa-times"></i></td>
+            <td>Basic diet plan</td>
+            <td>Custom nutrition plan</td>
+        </tr>
+        <tr>
+            <td>Price</td>
+            <td>$30/month</td>
+            <td>$50/month</td>
+            <td>$80/month</td>
+        </tr>
     </table>
+</section>
+
 
   </section class="faq">
   <h2>Frequently Asked Questions</h2>
-  <p>To make sure our future members know what they are getting involved in, here is a list of answered questions:</p>
-<button class="accordion"></button>
+  <p class="faqp">To make sure our future members know what they are getting involved in, here is a list of answered questions:</p>
+<button class="accordion">Can I cancel my membership anytime?</button>
 <div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p>Yes! You can cancel your membership at any time through your account settings. Monthly plans stop at the end of the current billing cycle, while annual plans may have a cancellation fee if canceled early.</p>
 </div>
 
-<button class="accordion">Section 2</button>
+<button class="accordion">What are the gym’s opening hours?</button>
 <div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p>Our gym is open Monday to Friday from 6:00 AM to 10:00 PM and Saturday & Sunday from 8:00 AM to 8:00 PM. Some locations may have different hours.</p>
 </div>
 
-<button class="accordion">Section 3</button>
+<button class="accordion">Can I bring a guest with me?
+</button>
 <div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p>Yes! Members with premium or family plans can bring one guest per visit for free. Standard members can purchase a guest pass at a discounted rate.</p>
 </div>
 <!-- this is for frequent asked questions script from W3Schools -->
 <script>
