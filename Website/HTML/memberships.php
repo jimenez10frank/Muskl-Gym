@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="../CSS/membership.css">
   <!-- footer styling -->
   <link rel="stylesheet" href="../CSS/footer.css">
-  
+
   <title>Homepage</title>
 </head>
 
@@ -68,15 +68,15 @@
     </div>
   </nav>
   <!-- header -->
-   <header>
-     <div class="menu">
-     <title>Memberships</title>
+  <header>
+    <div class="menu">
+      <title>Memberships</title>
       <h1>Membership Plans</h1>
       <p>Choose the membership that best suits your needs and start your fitness journey today!</p>
-      </div>
+    </div>
     <!-- Basic -->
-     <div class="memberships">
-    <section>
+    <div class="memberships">
+      <section class="membership-box">
         <div class="membership-plan">
           <h3>comfort</h3>
           <p>Access to all gym equipment</p>
@@ -84,10 +84,10 @@
           <p>Locker room access</p>
           <p>Price: $50/month</p>
           <button class="sign-up">Sign Up</button>
-    </section>
-    <!-- basic -->
-    <section>
-      <div class="membership-plan">
+      </section>
+      <!-- basic -->
+      <section class="membership-box">
+        <div class="membership-plan">
           <h6>Most Chosen!</h6>
           <h3>Basic</h3>
           <p>Access to all gym equipment</p>
@@ -95,23 +95,23 @@
           <p>Locker room access</p>
           <p>Price: $50/month</p>
           <button class="sign-up1">Sign Up</button>
-          </div>
-          </section>
-          <!-- Pro -->
-          <section>
-          <div class="membership-plan">
+        </div>
+      </section>
+      <!-- Pro -->
+      <section class="membership-box">
+        <div class="membership-plan">
           <h3>Pro</h3>
           <p>Access to all gym equipment</p>
           <p>Access to group classes</p>
           <p>Locker room access</p>
           <p>Price: $50/month</p>
           <button class="sign-up">Sign Up</button>
-          </div>
-          </section>
-          </div>
-   </header>
-  <!-- quotes -->
-   <section class="comparison">
+        </div>
+      </section>
+    </div>
+  </header>
+  <!-- comparison -->
+  <section class="comparison">
     <h2>Compare Memberships</h2>
     <table>
       <tr>
@@ -146,7 +146,42 @@
       </tr>
     </table>
 
-   </section>   
+  </section class="faq">
+  <h2>Frequently Asked Questions</h2>
+  <p>To make sure our future members know what they are getting involved in, here is a list of answered questions:</p>
+<button class="accordion"></button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Section 2</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Section 3</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<!-- this is for frequent asked questions script from W3Schools -->
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("actives");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+  </section>
 
   <!-- Footer -->
   <div class="footercontainer">

@@ -7,20 +7,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding: 50px;
-    
+    gap: 5vh ;
 }
+
 section {
-    display: flex;
-    align-items: 10px;
-    border-radius: 10px;
-    flex-wrap: wrap;
-    justify-items: center;
-    align-items: space-between;
-    box-shadow: 5px 5px 20px 10px grey;
-    margin: auto;
-    padding: 20px;
-    
+
 }
+
 .menu {
     display: flex;
     justify-items: center;
@@ -28,15 +21,41 @@ section {
     flex-direction: column;
     align-items: space-between;
     flex-wrap: wrap;
+    margin-top: 10px;
+
 }
+
 .membership-plan {
     display: flex;
     justify-items: center;
     align-items: center;
     flex-direction: column;
 }
+.membership-plan:nth-child(2) {
+    background-color: black;
+    color: white;
+}
 
-section:nth-child(2) {
+.membership-box{
+    display: flex;
+    align-items: 10px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: space-between;;
+    margin: auto;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.membership-box:hover {
+    transform: scale(1.1);
+    transform: translateY(-5%);
+    box-shadow: 0px 10px 100px 10px rgb(102, 243, 175);
+    z-index: 999 !important;
+}
+/* basic membership styling */
+.membership-box:nth-child(2) {
     background-color: black;
     color: white;
 }
@@ -51,6 +70,7 @@ section:nth-child(2) {
     margin: 10px;
     cursor: pointer;
 }
+
 .sign-up1 {
     background-color: rgb(255, 255, 255);
     color: black;
@@ -60,6 +80,7 @@ section:nth-child(2) {
     margin: 10px;
     cursor: pointer;
 }
+
 h6 {
     color: white;
     border: 1px solid red;
@@ -67,6 +88,13 @@ h6 {
     background-color: red;
 }
 
+h2 {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 /* table for comparing memberships */
 .comparison {
     justify-items: center;
@@ -76,12 +104,60 @@ h6 {
     padding: 50px;
 
 }
-.comparison table{
-    width: 100%;
+
+.comparison table {
+    width: 70%;
 }
-.comparison td, th {
+
+table td,
+th {
     border: 1px solid black;
-    border-radius: 50px;
+    border-radius: 10px;
     padding: 8px;
     text-align: center;
 }
+
+/* .faq {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 50px;
+} */
+.accordion {
+    background-color: #ff0000;
+    color: #444;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    transition: 0.5s;
+  }
+  
+  .actives, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .actives:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+  }
