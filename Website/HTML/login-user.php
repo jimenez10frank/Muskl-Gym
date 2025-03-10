@@ -1,3 +1,33 @@
+<?php
+require "../Database/user.php";
+
+session_start();
+
+if (isset($_SESSION['logged_in'])) {
+    header("Location: dashboard-user.php");
+
+    
+} elseif ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $user = new User();
+    $data = $user->loginUser($_POST['email']);
+
+    if ($data) {
+        if ($data['password'] == password_verify($_POST['password'], $data['password'])) {
+            $_SESSION['logged_in'] = true;
+            $_SESSION['name'] = $data['name'];            
+            header("Location: ../user/dashboard-user.php");
+        } else {
+            echo "Invalid password";
+        }
+    } else {
+        echo "User not found";
+    }
+}
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +49,7 @@
     <h1>Login Page</h1>
 
 
-    <form action="../Database/user.php" method="POST">
+    <form action="../HTML/dashboard-user.php" method="POST">
         <h1 class="logo">Muskl Gym</h1>
         <div class="email">
             <i class="fa-solid fa-envelope"></i>

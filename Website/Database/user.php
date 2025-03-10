@@ -25,6 +25,17 @@ class User{
          ]);
 
     }
+
+    // login functie
+
+    public function loginUser($email) {
+    
+        $data = $this->pdo->run("SELECT * FROM user WHERE email = :email", [
+            ':email' => $email
+        ])->fetch();
+        return $data;
+        }
+
 }
 
 ?>
