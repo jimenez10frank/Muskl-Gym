@@ -1,5 +1,20 @@
 <?php
 
+require "../Database/user.php";
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+  
+    try {
+        $account = new user();
+        $account->register($_POST['name'], $_POST['lastname'], $_POST['birthdate'], $_POST['sex'], $_POST['phonenumber'], $_POST['email'], $_POST['password']);
+        header("Location: ../HTML/login-user.php");
+    } catch (PDOException $e) {
+        echo $e->getMessage();
+    }
+
+
+}
+
 
 ?>
 <!DOCTYPE html>
@@ -15,8 +30,6 @@
   <link rel="stylesheet" href="../CSS/register.css">
   <!-- for the body -->
   <link rel="stylesheet" href="../CSS/body.css">
-  <!-- footer styling -->
-  <link rel="stylesheet" href="../CSS/footer.css">
     <title>Register User</title>
 </head>
 <body>
@@ -39,11 +52,11 @@
             </div>
             <div class="birthdate">
             <i class="fa-solid fa-calendar"></i>
-            <input type="date" name="birthdate" id="birthdate" placeholder="Birthdate" required>
+            <input type="date" name="birthdate" id="birthdate" placeholder="birthdate" required>
             </div>
             <div class="sex-group">
             <label for="sex">Choose your gender:</label>
-            <select id="sex">
+            <select id="sex" name="sex">
             <option value="female">female</option>
             <option value="male">male</option>
             <option value="other">other</option>
