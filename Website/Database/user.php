@@ -36,6 +36,22 @@ class User{
         return $data;
         }
 
+    // membership functie
+
+    public function memberships($user_id, $type, $created_at, $ends_at) {
+        $this->pdo->run(
+            "INSERT INTO membership (user_id, type, created_at, ends_at) 
+             VALUES (:user_id, :type, :created_at, :ends_at)", 
+            [
+                ':user_id' => $user_id,
+                ':type' => $type,
+                ':created_at' => $created_at,
+                ':ends_at' => $ends_at
+            ]
+        );
+    }
+    
+    
 }
 
 ?>

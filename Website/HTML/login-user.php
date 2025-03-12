@@ -14,8 +14,9 @@ if (isset($_SESSION['logged_in'])) {
     if ($data) {
         if ($data['password'] == password_verify($_POST['password'], $data['password'])) {
             $_SESSION['logged_in'] = true;
-            $_SESSION['name'] = $data['name'];            
-            header("Location: ../user/dashboard-user.php");
+            $_SESSION['id'] = $data['id'];            
+            $_SESSION['name'] = $data['name'];
+            header("Location: dashboard-user.php");
         } else {
             echo "Invalid password";
         }
@@ -49,7 +50,7 @@ if (isset($_SESSION['logged_in'])) {
     <h1>Login Page</h1>
 
 
-    <form action="../HTML/dashboard-user.php" method="POST">
+    <form method="POST">
         <h1 class="logo">Muskl Gym</h1>
         <div class="email">
             <i class="fa-solid fa-envelope"></i>
