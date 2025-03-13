@@ -203,6 +203,23 @@ $_SESSION['name'];
 <div class="panel">
   <p>Yes! Members with premium or family plans can bring one guest per visit for free. Standard members can purchase a guest pass at a discounted rate.</p>
 </div>
+<!-- this is for frequent asked questions script from W3Schools -->
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("actives");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   </section>

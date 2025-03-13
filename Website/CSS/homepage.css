@@ -21,7 +21,6 @@
     object-fit: cover;
 }
 
-
 section {
     display: flex;
     justify-items: center;
@@ -32,7 +31,6 @@ section {
     margin-right: 20%;
     flex-wrap: wrap;
 }
-
 section h1 {
     margin-bottom: 40px;
 }
