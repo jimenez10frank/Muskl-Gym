@@ -118,8 +118,9 @@
 }
 /* effect for memberships boxes */
 .group img:hover {
-    transform: scale(1.1);
-    transform: translateY(-5%);
-    box-shadow: 0px 10px 100px 10px rgb(106, 106, 106);
+    transform: scale(10.1);
+    transform: translateY(-1%);
+    box-shadow: 0px 10px 80px 10px rgb(106, 106, 106);
     z-index: 999 !important;
 }
+

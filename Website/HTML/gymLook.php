@@ -77,19 +77,19 @@
         The heat helps to soothe sore muscles and improve circulation, while the steam can help to clear your skin and airways. 
         It's the perfect way to end your workout and leave you feeling refreshed and rejuvenated.</p>
         </div>
-    <img src="../Assets/Pictures/background.jpg" alt="background" id="sauna">
+    <img src="../Assets/Pictures/sauna1.jpg" alt="background" id="sauna">
 </div>
 </div>
 <!-- slideshows -->
-<div id="carouselExampleCaptions" class="carousel slide sectieCarousel">
+<div id="carouselExampleCaptions1" class="carousel slide sectieCarousel">
 <div class="carousel-indicators">
-  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+  <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="2" aria-label="Slide 3"></button>
 </div>
 <div class="carousel-inner">
   <div class="carousel-item active">
-    <img src="../Assets/Pictures/workout1.jpg" class="d-block w-100" alt="...">
+    <img src="../Assets/Pictures/sauna4.jpg" class="d-block w-100" alt="...">
     <div class="carousel-caption d-none d-md-block">
       <h5>Strength Starts Here</h5>
       <p><strong>Push your limits and build the strongest version of yourself. 
@@ -97,7 +97,7 @@
     </div>
   </div>
   <div class="carousel-item">
-    <img src="../Assets/Pictures/shower.jpg" class="d-block w-100" alt="...">
+    <img src="../Assets/Pictures/sauna2.jpg" class="d-block w-100" alt="...">
     <div class="carousel-caption d-none d-md-block">
       <h5>Refresh & Recharge</h5>
       <p><strong>Elevate your post-workout experience with our premium showers and wellness facilities.
@@ -105,7 +105,7 @@
     </div>
   </div>
   <div class="carousel-item">
-    <img src="../Assets/Pictures/workout3.jpg" class="d-block w-100" alt="...">
+    <img src="../Assets/Pictures/sauna3.jpg" class="d-block w-100" alt="...">
     <div class="carousel-caption d-none d-md-block">
       <h5>Recover Like a Pro</h5>
       <p><strong>Maximize your performance with our dedicated recovery zone. 
@@ -113,11 +113,11 @@
     </div>
   </div>
 </div>
-<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide="prev">
   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
   <span class="visually-hidden">Previous</span>
 </button>
-<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide="next">
   <span class="carousel-control-next-icon" aria-hidden="true"></span>
   <span class="visually-hidden">Next</span>
 </button>
@@ -129,19 +129,19 @@
     <p>Our gym is fully equipped with the latest fitness machines and free weights to suit all training styles. 
         From treadmills and rowing machines to squat racks and dumbbells, we provide everything you need for a complete and effective workout.</p>
         </div>
-    <img src="../Assets/Pictures/background.jpg" alt="background" id="sauna">
+    <img src="../Assets/Pictures/equipment1.jpg" alt="background" id="sauna">
 </div>
 </div>
 <!-- slideshows -->
-<div id="carouselExampleCaptions" class="carousel slide sectieCarousel">
+<div id="carouselExampleCaptions2" class="carousel slide sectieCarousel">
 <div class="carousel-indicators">
-  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+  <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2" aria-label="Slide 3"></button>
 </div>
 <div class="carousel-inner">
   <div class="carousel-item active">
-    <img src="../Assets/Pictures/workout1.jpg" class="d-block w-100" alt="...">
+    <img src="../Assets/Pictures/equipment2.jpg" class="d-block w-100" alt="...">
     <div class="carousel-caption d-none d-md-block">
       <h5>Strength Starts Here</h5>
       <p><strong>Push your limits and build the strongest version of yourself. 
@@ -149,7 +149,7 @@
     </div>
   </div>
   <div class="carousel-item">
-    <img src="../Assets/Pictures/shower.jpg" class="d-block w-100" alt="...">
+    <img src="../Assets/Pictures/equipment3.png" class="d-block w-100" alt="...">
     <div class="carousel-caption d-none d-md-block">
       <h5>Refresh & Recharge</h5>
       <p><strong>Elevate your post-workout experience with our premium showers and wellness facilities.
@@ -157,7 +157,7 @@
     </div>
   </div>
   <div class="carousel-item">
-    <img src="../Assets/Pictures/workout3.jpg" class="d-block w-100" alt="...">
+    <img src="../Assets/Pictures/equipment4.png" class="d-block w-100" alt="...">
     <div class="carousel-caption d-none d-md-block">
       <h5>Recover Like a Pro</h5>
       <p><strong>Maximize your performance with our dedicated recovery zone. 
@@ -165,11 +165,11 @@
     </div>
   </div>
 </div>
-<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
   <span class="visually-hidden">Previous</span>
 </button>
-<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
   <span class="carousel-control-next-icon" aria-hidden="true"></span>
   <span class="visually-hidden">Next</span>
 </button>
@@ -182,19 +182,19 @@
         Featuring relaxation areas, soothing music, and ambient lighting, it’s the perfect space to unwind after a tough workout. 
         Whether you're meditating or simply taking a break, you'll leave feeling completely refreshed.</p>
         </div>
-    <img src="../Assets/Pictures/background.jpg" alt="background" id="wellness">
+    <img src="../Assets/Pictures/wellness3.png" alt="background" id="wellness">
 </div>
 </div>
 <!-- slideshows -->
-<div id="carouselExampleCaptions" class="carousel slide sectieCarousel">
+<div id="carouselExampleCaptions3" class="carousel slide sectieCarousel">
 <div class="carousel-indicators">
-  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+  <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="2" aria-label="Slide 3"></button>
 </div>
 <div class="carousel-inner">
   <div class="carousel-item active">
-    <img src="../Assets/Pictures/workout1.jpg" class="d-block w-100" alt="...">
+    <img src="../Assets/Pictures/wellness1.png" class="d-block w-100" alt="...">
     <div class="carousel-caption d-none d-md-block">
       <h5>Strength Starts Here</h5>
       <p><strong>Push your limits and build the strongest version of yourself. 
@@ -202,7 +202,7 @@
     </div>
   </div>
   <div class="carousel-item">
-    <img src="../Assets/Pictures/shower.jpg" class="d-block w-100" alt="...">
+    <img src="../Assets/Pictures/wellness2.png" class="d-block w-100" alt="...">
     <div class="carousel-caption d-none d-md-block">
       <h5>Refresh & Recharge</h5>
       <p><strong>Elevate your post-workout experience with our premium showers and wellness facilities.
@@ -210,7 +210,7 @@
     </div>
   </div>
   <div class="carousel-item">
-    <img src="../Assets/Pictures/workout3.jpg" class="d-block w-100" alt="...">
+    <img src="../Assets/Pictures/wellness4.png" class="d-block w-100" alt="...">
     <div class="carousel-caption d-none d-md-block">
       <h5>Recover Like a Pro</h5>
       <p><strong>Maximize your performance with our dedicated recovery zone. 
@@ -218,11 +218,11 @@
     </div>
   </div>
 </div>
-<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide="prev">
   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
   <span class="visually-hidden">Previous</span>
 </button>
-<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide="next">
   <span class="carousel-control-next-icon" aria-hidden="true"></span>
   <span class="visually-hidden">Next</span>
 </button>
@@ -234,19 +234,19 @@
     <p>Staying hydrated is key to peak performance, which is why our hydration station offers filtered water and electrolyte drinks. 
         Grab a quick refill before or after your session and keep your energy levels at their best.</p>
         </div>
-    <img src="../Assets/Pictures/background.jpg" alt="background" id="hidrationStation">
+    <img src="../Assets/Pictures/bar1.png" alt="background" id="hidrationStation">
 </div>
 </div>
 <!-- slideshows -->
-<div id="carouselExampleCaptions" class="carousel slide sectieCarousel">
+<div id="carouselExampleCaptions4" class="carousel slide sectieCarousel">
 <div class="carousel-indicators">
-  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <button type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+  <button type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  <button type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide-to="2" aria-label="Slide 3"></button>
 </div>
 <div class="carousel-inner">
   <div class="carousel-item active">
-    <img src="../Assets/Pictures/workout1.jpg" class="d-block w-100" alt="...">
+    <img src="../Assets/Pictures/bar2.png" class="d-block w-100" alt="...">
     <div class="carousel-caption d-none d-md-block">
       <h5>Strength Starts Here</h5>
       <p><strong>Push your limits and build the strongest version of yourself. 
@@ -254,7 +254,7 @@
     </div>
   </div>
   <div class="carousel-item">
-    <img src="../Assets/Pictures/shower.jpg" class="d-block w-100" alt="...">
+    <img src="../Assets/Pictures/bar3.png" class="d-block w-100" alt="...">
     <div class="carousel-caption d-none d-md-block">
       <h5>Refresh & Recharge</h5>
       <p><strong>Elevate your post-workout experience with our premium showers and wellness facilities.
@@ -270,15 +270,16 @@
     </div>
   </div>
 </div>
-<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide="prev">
   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
   <span class="visually-hidden">Previous</span>
 </button>
-<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions4" data-bs-slide="next">
   <span class="carousel-control-next-icon" aria-hidden="true"></span>
   <span class="visually-hidden">Next</span>
 </button>
 </div>
+
 
   <div class="footercontainer">
     <footer>
