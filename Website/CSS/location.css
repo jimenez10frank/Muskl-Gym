@@ -1,0 +1,40 @@
+.location {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: auto;
+    gap: 50px;
+    padding: 20px;
+    text-align: center;
+}
+
+.location-text, .location-map {
+    flex: 1;
+    min-width: 400px;
+    max-width: 600px;
+    box-shadow: rgb(116, 116, 116) 0px 0px 10px;
+    border-radius: 30px;
+}
+
+.location-text:hover, .location-map:hover {
+    transform: scale(0.1);
+    transform: translateY(-1%);    
+    box-shadow: rgb(116, 116, 116) 0px 0px 20px;
+}
+
+.location-map iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    border-radius: 20px;
+}
+
+/* Responsive design: onder elkaar op kleine schermen */
+@media (max-width: 768px) {
+    .location {
+        flex-direction: column;
+    }
+}
