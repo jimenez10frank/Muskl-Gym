@@ -70,6 +70,12 @@ class Admin {
         ])->fetch();
         return $data;
     }
+    public function getUser($id) {
+        $data = $this->pdo->run("SELECT * FROM user WHERE id = :id", [
+            ':id' => $id
+        ])->fetch();
+        return $data;
+    }
 
     // delete membership functie
     public function deleteMembership($id) {

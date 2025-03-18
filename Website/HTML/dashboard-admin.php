@@ -1,3 +1,18 @@
+<?php
+
+require "../Database/admin.php";
+
+
+session_start();
+
+if (!isset($_SESSION['logged_in'])) {
+    header("Location: login-admin.php");
+}
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -2,8 +2,8 @@
 
 require "../Database/admin.php";
 
-session_start();
 
+session_start();
 if (!isset($_SESSION['logged_in'])) {
     header("Location: login-admin.php");
 }
@@ -60,7 +60,6 @@ $data = $admin->seeUsers();
                     <td><?= htmlspecialchars($admin['phonenumber']) ?></td>
                     <td>
                         <a href="edit-user-admin.php?id=<?= $admin['id'] ?>" class="btn btn-sm btn-primary">Edit</a>
-                        <a href="delete-user-admin.php?id=<?= $admin['id'] ?>" class="btn btn-sm btn-danger">Delete</a>
                     </td>
                 </tr>
             <?php endforeach; ?>

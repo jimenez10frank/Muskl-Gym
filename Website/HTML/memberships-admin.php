@@ -2,6 +2,13 @@
 
 require "../Database/admin.php";
 
+
+session_start();
+
+if (!isset($_SESSION['logged_in'])) {
+    header("Location: login-admin.php");
+}
+
 $admin = new Admin();
 $data = $admin->seeMemberships();
 

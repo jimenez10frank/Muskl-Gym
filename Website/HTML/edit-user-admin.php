@@ -5,30 +5,25 @@ require "../Database/admin.php";
 $admin = new Admin();
 $data = $admin->seeUsers();
 
+session_start();
 
-
-
-// If ID is provided via GET, fetch user data
-if (isset($_GET['id'])) {
-    $data = $admin->seeUsers($_GET['id']);
+if (!isset($_SESSION['logged_in'])) {
+    header("Location: login-admin.php");
 }
 
-// Handle form submission
-if (isset($_POST['edit-user'])) {
+if(isset($_POST['edit-user'])){
     $admin->editUser(
-        $_POST['id'],
-        $_POST['name'],
-        $_POST['lastname'],
-        $_POST['email'],
-        $_POST['birthdate'],
-        $_POST['sex'],
+        $_POST['id'], 
+        $_POST['name'], 
+        $_POST['lastname'], 
+        $_POST['email'], 
+        $_POST['birthdate'], 
+        $_POST['sex'], 
         $_POST['phonenumber']
     );
+    header('Location: view-users-admin.php');
+    exit(); // Always call exit after header redirect to prevent further script execution
 }
-
-
-
-
 ?>
 
 <!DOCTYPE html>
@@ -58,37 +53,28 @@ if (isset($_POST['edit-user'])) {
         <tbody>
             <?php foreach ($data as $admin): ?>
                 <tr>
-                    <td><?= htmlspecialchars($admin['id']) ?></td>
-                    <td>
-                        <input type="text" value="<?= htmlspecialchars($admin['name']) ?>" class="edit-field" data-id="<?= $admin['id'] ?>" data-column="name">
-                    </td>
-                    <td>
-                        <input type="text" value="<?= htmlspecialchars($admin['lastname']) ?>" class="edit-field" data-id="<?= $admin['id'] ?>" data-column="name">
-                    </td>
-                    <td>
-                        <input type="email" value="<?= htmlspecialchars($admin['email']) ?>" class="edit-field" data-id="<?= $admin['id'] ?>" data-column="email">
-                    </td>
-                    <td>
-                        <input type="date" value="<?= htmlspecialchars($admin['birthdate']) ?>" class="edit-field" data-id="<?= $admin['id'] ?>" data-column="birthdate">
-                    </td>
-                    <td>
-                        <select class="edit-select" data-id="<?= $admin['id'] ?>" data-column="sex">
-                            <option value="Male" <?= $admin['sex'] == 'Male' ? 'selected' : '' ?>>Male</option>
-                            <option value="Female" <?= $admin['sex'] == 'Female' ? 'selected' : '' ?>>Female</option>
-                            <option value="Other" <?= $admin['sex'] == 'Other' ? 'selected' : '' ?>>Other</option>
-                        </select>
-                    </td>
-                    <td>
-                        <input type="text" value="<?= htmlspecialchars($admin['phonenumber']) ?>" class="edit-field" data-id="<?= $admin['id'] ?>" data-column="phonenumber">
-                    </td>
-                    <td>
-                        <a href="view-users-admin.php?id=<?= $admin['id'] ?>" class="btn btn-sm btn-danger" name="edit-user">Edit</a>
-                    </td>
+                    <form method="POST" >
+                        <td><input type="text" name="id" value="<?= htmlspecialchars($admin['id']) ?>" readonly></td>
+                        <td><input type="text" name="name" value="<?= htmlspecialchars($admin['name']) ?>" class="edit-field"></td>
+                        <td><input type="text" name="lastname" value="<?= htmlspecialchars($admin['lastname']) ?>" class="edit-field"></td>
+                        <td><input type="email" name="email" value="<?= htmlspecialchars($admin['email']) ?>" class="edit-field"></td>
+                        <td><input type="date" name="birthdate" value="<?= htmlspecialchars($admin['birthdate']) ?>" class="edit-field"></td>
+                        <td>
+                            <select name="sex" class="edit-select">
+                                <option value="Male" <?= $admin['sex'] == 'Male' ? 'selected' : '' ?>>Male</option>
+                                <option value="Female" <?= $admin['sex'] == 'Female' ? 'selected' : '' ?>>Female</option>
+                                <option value="Other" <?= $admin['sex'] == 'Other' ? 'selected' : '' ?>>Other</option>
+                            </select>
+                        </td>
+                        <td><input type="text" name="phonenumber" value="<?= htmlspecialchars($admin['phonenumber']) ?>" class="edit-field"></td>
+                        <td><button type="submit" name="edit-user" class="btn btn-sm btn-primary">Save</button></td>
+                    </form>
                 </tr>
             <?php endforeach; ?>
         </tbody>
     </table>
 </div>
+
 
 </body>
 </html>

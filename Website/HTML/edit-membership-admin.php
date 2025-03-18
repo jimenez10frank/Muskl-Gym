@@ -3,6 +3,12 @@
     $admin = new Admin();
     $data = $admin->seeMemberships();
 
+
+session_start();
+
+if (!isset($_SESSION['logged_in'])) {
+    header("Location: login-admin.php");
+}
     
     if(isset($_GET['id'])){
         $data = $admin->getMembership($_GET['id']);
