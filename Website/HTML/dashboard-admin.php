@@ -17,7 +17,7 @@
     </div>
     <div class="admin">
     <p>Here you can view all the contacts and their details</p>
-    <a href="../HTML/view-memberships-admin.php">View Memberships</a>
+    <a href="../HTML/memberships-admin.php">View Memberships</a>
     </div>
     <div class="admin">
     <p>Here you can view all the products and their details</p>
