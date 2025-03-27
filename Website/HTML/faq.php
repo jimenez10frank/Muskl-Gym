@@ -12,12 +12,13 @@
   <link rel="stylesheet" href="../CSS/navbars.css">
   <!-- for the body -->
   <link rel="stylesheet" href="../CSS/body.css">
-  <!-- homepage content -->
-  <link rel="stylesheet" href="../CSS/membership.css">
+  <!-- Contact Form Styling -->
+  <link rel="stylesheet" href="../CSS/faq.css">
+
   <!-- footer styling -->
   <link rel="stylesheet" href="../CSS/footer.css">
-
-  <title>Homepage</title>
+  
+  <title>FAQ PAGE</title>
 </head>
 
 <body>
@@ -36,10 +37,10 @@
         <a class="navbar-brand col-lg-3 me-0" href="#"><i class="fa-solid fa-person-running fa-2xl" id="logo"></i></a>
         <ul class="navbar-nav col-lg-6 justify-content-lg-center">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link active" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Memberships</a>
+            <a class="nav-link" href="../HTML/memberships.php">Memberships</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Products</a>
@@ -67,129 +68,78 @@
       </div>
     </div>
   </nav>
-  <!-- header -->
-  <header>
-    <div class="menu">
-      <title>Memberships</title>
-      <h1>Membership Plans</h1>
-      <p>Choose the membership that best suits your needs and start your fitness journey today!</p>
-    </div>
-    <!-- Basic -->
-    <div class="memberships">
-      <section class="membership-box">
-        <div class="membership-plan">
-          <h3>comfort</h3>
-          <p>Access to all gym equipment</p>
-          <p>Access to group classes</p>
-          <p>Locker room access</p>
-          <p>Price: $50/month</p>
-          <button class="sign-up">Sign Up</button>
-      </section>
-      <!-- basic -->
-      <section class="membership-box">
-        <div class="membership-plan">
-          <h6>Most Chosen!</h6>
-          <h3>Basic</h3>
-          <p>Access to all gym equipment</p>
-          <p>Access to group classes</p>
-          <p>Locker room access</p>
-          <p>Price: $50/month</p>
-          <button class="sign-up1">Sign Up</button>
-        </div>
-      </section>
-      <!-- Pro -->
-      <section class="membership-box">
-        <div class="membership-plan">
-          <h3>Pro</h3>
-          <p>Access to all gym equipment</p>
-          <p>Access to group classes</p>
-          <p>Locker room access</p>
-          <p>Price: $50/month</p>
-          <button class="sign-up">Sign Up</button>
-        </div>
-      </section>
-    </div>
-  </header>
-  <!-- comparison -->
-  <section class="comparison">
-    <h2>Compare Memberships</h2>
-    <table>
-        <tr>
-            <th>Features</th>
-            <th>Basic</th>
-            <th>Comfort</th>
-            <th>Pro</th>
-        </tr>
-        <tr>
-            <td>Access to all gym equipment</td>
-            <td><i class="fas fa-check"></i></td>
-            <td><i class="fas fa-check"></i></td>
-            <td><i class="fas fa-check"></i></td>
-        </tr>
-        <tr>
-            <td>Access to group classes</td>
-            <td><i class="fas fa-times"></i></td>
-            <td><i class="fas fa-check"></i></td>
-            <td><i class="fas fa-check"></i></td>
-        </tr>
-        <tr>
-            <td>Personal trainer sessions</td>
-            <td><i class="fas fa-times"></i></td>
-            <td>2 sessions/month</td>
-            <td>Unlimited</td>
-        </tr>
-        <tr>
-            <td>Sauna & spa access</td>
-            <td><i class="fas fa-times"></i></td>
-            <td><i class="fas fa-check"></i></td>
-            <td><i class="fas fa-check"></i></td>
-        </tr>
-        <tr>
-            <td>Locker room access</td>
-            <td>Standard lockers</td>
-            <td>Premium lockers</td>
-            <td>Private locker & laundry service</td>
-        </tr>
-        <tr>
-            <td>Guest passes</td>
-            <td>None</td>
-            <td>2 per month</td>
-            <td>Unlimited</td>
-        </tr>
-        <tr>
-            <td>Nutrition & diet plan</td>
-            <td><i class="fas fa-times"></i></td>
-            <td>Basic diet plan</td>
-            <td>Custom nutrition plan</td>
-        </tr>
-        <tr>
-            <td>Price</td>
-            <td>$30/month</td>
-            <td>$50/month</td>
-            <td>$80/month</td>
-        </tr>
-    </table>
+
+  <!-- Faq -->
+  <section class="faq">
+  <h2 class="h2text">Frequently Asked Questions</h2>
+  
+  <p class="faqp">To make sure our future members know what they are getting involved in, here is a list of answered questions:</p>
+
+  <h2 class="h2text">Memberships</h2>
+  <button class="accordion">Can I cancel my membership anytime?</button>
+  <div class="panel">
+    <p>Yes! You can cancel your membership at any time through your account settings. Monthly plans stop at the end of the current billing cycle, while annual plans may have a cancellation fee if canceled early.</p>
+  </div>
+
+  <button class="accordion">What are the gym’s opening hours?</button>
+  <div class="panel">
+    <p>Our gym is open Monday to Friday from 6:00 AM to 10:00 PM and Saturday & Sunday from 8:00 AM to 8:00 PM. Some locations may have different hours.</p>
+  </div>
+
+  <button class="accordion">Can I bring a guest with me?</button>
+  <div class="panel">
+    <p>Yes! Members with premium or family plans can bring one guest per visit for free. Standard members can purchase a guest pass at a discounted rate.</p>
+  </div>
+
+  <h2 class="h2text">Group Classes</h2>
+  <button class="accordion">Do I need to book in advance for group classes?</button>
+  <div class="panel">
+    <p>Yes, it is recommended to book your spot in advance for group classes. You can easily reserve a spot through our app or website.</p>
+  </div>
+
+  <button class="accordion">What types of group classes do you offer?</button>
+  <div class="panel">
+    <p>We offer a wide range of group classes, including yoga, spinning, HIIT, pilates, and strength training. Check our schedule for available classes.</p>
+  </div>
+
+  <button class="accordion">Can I attend group classes if I’m a beginner?</button>
+  <div class="panel">
+    <p>Absolutely! We offer classes for all fitness levels, from beginners to advanced. You can choose classes that match your experience and progress at your own pace.</p>
+  </div>
+
+  <h2 class="h2text">Facilities</h2>
+  <button class="accordion">What facilities are available at the gym?</button>
+  <div class="panel">
+    <p>Our gym is equipped with a wide variety of fitness machines, free weights, a cardio area, group class studios, and relaxation zones. We also have locker rooms, showers, and a sauna.</p>
+  </div>
+
+  <button class="accordion">Is there a swimming pool at the gym?</button>
+  <div class="panel">
+    <p>Some of our locations have a swimming pool. Please check the specific location details on our website to see if this amenity is available.</p>
+  </div>
+
+  <button class="accordion">Are there personal trainers available?</button>
+  <div class="panel">
+    <p>Yes, we have certified personal trainers available to help you with your fitness goals. You can book a session through our app or at the front desk.</p>
+  </div>
+
+  <h2 class="h2text">Cancellations/Termination</h2>
+  <button class="accordion">How do I cancel my membership?</button>
+  <div class="panel">
+    <p>You can cancel your membership through your account settings on our website. If you have a long-term plan, please check for any cancellation fees.</p>
+  </div>
+
+  <button class="accordion">Can I get a refund if I cancel my membership early?</button>
+  <div class="panel">
+    <p>Refund policies vary depending on the type of membership. Monthly plans are non-refundable, but annual plans may have a partial refund, depending on the terms.</p>
+  </div>
+
+  <button class="accordion">What happens if I cancel my membership before the end of the billing cycle?</button>
+  <div class="panel">
+    <p>For monthly plans, your membership will end at the end of the current billing cycle. For annual plans, there may be a cancellation fee if canceled early.</p>
+  </div>
 </section>
 
-<!-- Faq -->
-  </section class="faq">
-  <h2>Frequently Asked Questions</h2>
-  <p class="faqp">To make sure our future members know what they are getting involved in, here is a list of answered questions:</p>
-<button class="accordion">Can I cancel my membership anytime?</button>
-<div class="panel">
-  <p>Yes! You can cancel your membership at any time through your account settings. Monthly plans stop at the end of the current billing cycle, while annual plans may have a cancellation fee if canceled early.</p>
-</div>
-
-<button class="accordion">What are the gym’s opening hours?</button>
-<div class="panel">
-  <p>Our gym is open Monday to Friday from 6:00 AM to 10:00 PM and Saturday & Sunday from 8:00 AM to 8:00 PM. Some locations may have different hours.</p>
-</div>
-
-<button class="accordion">Can I bring a guest with me?
-</button>
-<div class="panel">
-  <p>Yes! Members with premium or family plans can bring one guest per visit for free. Standard members can purchase a guest pass at a discounted rate.</p>
-</div>
 <!-- this is for frequent asked questions script from W3Schools -->
 <script>
 var acc = document.getElementsByClassName("accordion");
@@ -208,9 +158,7 @@ for (i = 0; i < acc.length; i++) {
 }
 </script>
 
-  </section>
 
-  <!-- Footer -->
   <div class="footercontainer">
     <footer>
       <!-- Muskl Section -->
