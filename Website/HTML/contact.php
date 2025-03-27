@@ -5,11 +5,11 @@ require '../Database/contact.php';
 $contact = new Contact();
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $message = $_POST['message'];
 
-    $contact->contact($name, $email, $message);
+  $contact->contact($name, $email, $message);
 }
 
 ?>
@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
   <!-- footer styling -->
   <link rel="stylesheet" href="../CSS/footer.css">
-  
+
   <title>Contact Page</title>
 </head>
 
@@ -84,29 +84,28 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       </div>
     </div>
   </nav>
-    <!-- Contact Form -->
-    <div class="container">
-        <div class="contact-container">
+  <!-- Contact Form -->
+  <div class="container">
+    <div class="contact-container">
       <h1>Contact Us</h1>
       <p>Send us a message and we will get back to you as soon as possible!</p>
-      </div>
-      <form method="post" class="contact-form">
-        <div class="form-group">
-            <i class="fa-solid fa-user"></i>
-          <input type="text" id="name" placeholder="Enter your name" name="name" required>
-        </div>
-        <div class="form-group">
-        <i class="fa-solid fa-envelope"></i>
-          <input type="email" id="email" placeholder="Enter your email" name="email" required>
-        </div>
-        <div class="form-group">
-        <i class="fa-solid fa-comment"></i>
-          <textarea  id="message"  placeholder="Enter your message" name="message"
-            required></textarea>
-        </div>
-        <button type="submit" class="submit">Submit</button>
-    </form>
     </div>
+    <form method="post" class="contact-form">
+      <div class="form-group">
+        <i class="fa-solid fa-user"></i>
+        <input type="text" id="name" placeholder="Enter your name" name="name" required>
+      </div>
+      <div class="form-group">
+        <i class="fa-solid fa-envelope"></i>
+        <input type="email" id="email" placeholder="Enter your email" name="email" required>
+      </div>
+      <div class="form-group txtArea">
+        <i class="fa-solid fa-comment"></i>
+        <textarea id="message" placeholder="Enter your message" name="message" required></textarea>
+      </div>
+      <button type="submit" class="submit">Submit</button>
+    </form>
+  </div>
 
   <div class="footercontainer">
     <footer>

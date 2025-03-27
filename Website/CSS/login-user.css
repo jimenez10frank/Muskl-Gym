@@ -1,5 +1,19 @@
+body {
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+
 form {
     margin: auto;
+    margin-top: 150px;
     width: 100%;
     max-width: 500px;
     padding: 1em;
@@ -8,6 +22,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: white;
 }
 
 .email {
@@ -18,6 +33,25 @@ form {
     margin-bottom: 20px;
 }
 
-.logo {
+.lol {
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.lol i {
+    margin: auto;
+}
+
+form input {
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    background: black;
+
+}
+
+form input::placeholder {
+    text-align: center;
+    color: white;
 }

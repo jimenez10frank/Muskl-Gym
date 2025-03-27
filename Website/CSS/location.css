@@ -16,7 +16,7 @@
     min-width: 400px;
     max-width: 600px;
     box-shadow: rgb(116, 116, 116) 0px 0px 10px;
-    border-radius: 30px;
+    border-radius: 10px;
 }
 
 .location-text:hover, .location-map:hover {

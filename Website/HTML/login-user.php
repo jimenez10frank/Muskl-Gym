@@ -46,12 +46,17 @@ if (isset($_SESSION['logged_in'])) {
     <title>Login Page</title>
 </head>
 <body>
-    <a href="../HTML/homepage.php">Back to Home Page</a>
-    <h1>Login Page</h1>
+    <div class="logout">
+        <a href="../HTML/homepage.php">Back to Home Page</a>
+    </div>
 
 
     <form method="POST">
+        <div class="container">
+            <div class="lol">
         <h1 class="logo">Muskl Gym</h1>
+        <i class="fa-solid fa-person-running fa-2xl" id="logo"></i>
+        </div>
         <div class="email">
             <i class="fa-solid fa-envelope"></i>
             <input type="email" name="email" placeholder="Email" required>
@@ -63,6 +68,7 @@ if (isset($_SESSION['logged_in'])) {
         <button type="submit">Login</button>
         <div>
         Don't have an account?<a href="register.php">Register Here</a>
+        </div>
         </div>
     </form>
 </body>

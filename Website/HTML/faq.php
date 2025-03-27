@@ -71,7 +71,7 @@
 
   <!-- Faq -->
   <section class="faq">
-  <h2 class="h2text">Frequently Asked Questions</h2>
+  <h2 class="h2textMain">Frequently Asked Questions</h2>
   
   <p class="faqp">To make sure our future members know what they are getting involved in, here is a list of answered questions:</p>
 
