@@ -1,14 +1,19 @@
+body {
+    background-color: black;
+}
 form  {
     margin:  auto;
     width: 100%;
     max-width: 500px;
     padding: 1em;
     border: 1px solid #ccc;
+    background-color: white;
     border-radius: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    margin-top: 10px;
 }
 
 .startTraining{
@@ -39,4 +44,57 @@ form  {
 }
 input::placeholder {
     text-align: center;
+    color: white;
+}
+
+.form-group input {
+    background-color: black;
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+}
+
+.sex-group {
+    border: 1px solid black;
+    padding: 3px;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    font-weight: 600;
+}
+
+.sex-group select {
+    color: white;
+    background-color: black;
+    font-weight: 600;
+
+}
+
+input[type="submit"] {
+    width: 85px;
+    padding: 8px;
+}
+
+.logout {
+    border: 1px solid white;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 3vh;
+    margin-left: 2vh;
+    color: white;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transition: 1s;
+}
+
+.logout:hover {
+    transform: scale(1.04);
+    box-shadow: rgb(59, 89, 121) 0px 20px 30px -10px;
+
+}
+
+.logout a {
+    text-decoration: none;
+    color: white;
 }

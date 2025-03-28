@@ -33,22 +33,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <title>Register User</title>
 </head>
 <body>
-    <section>
-        <h2>
-            go back to homepage
-        </h2>
-        <h2 class="startTraining">Start Training Today</h2>
-        <form action="../HTML/register.php" method="POST">
+<div class="logout">
+    <i class="fa-solid fa-arrow-left"></i>
+        <a href="../HTML/homepage.php">Back to Home Page</a>
+    </div>
+
+    <div class="container">
+    <form action="../HTML/register.php" method="POST">
+            <h2 class="startTraining">Start Training Today</h2>
             <div class="form-group">
                 <!-- personal details group -->
-            <h1>Personal Details</h1>
             <div class="first-name">
             <i class="fa-solid fa-user"></i>
             <input type="text" name="name" id="name" placeholder="First Name" required>
             </div>
             <div class="last-name">
             <i class="fa-solid fa-user"></i>
-            <input type="text" name="lastname" id="lastname" required>
+            <input type="text" name="lastname" id="lastname" placeholder="Last Name" required>
             </div>
             <div class="birthdate">
             <i class="fa-solid fa-calendar"></i>
@@ -74,9 +75,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <i class="fa-solid fa-lock"></i>
             <input type="password" name="password" id="password" placeholder="Password" required>
             </div>
-            <button type="submit">Register</button>                    
+            <input type="submit" value="register" name="register">
         </div>
     </form>
-    </section>
+    </div>
 </body>
 </html>

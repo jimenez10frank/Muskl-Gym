@@ -47,6 +47,7 @@ if (isset($_SESSION['logged_in'])) {
 </head>
 <body>
     <div class="logout">
+    <i class="fa-solid fa-arrow-left"></i>
         <a href="../HTML/homepage.php">Back to Home Page</a>
     </div>
 
@@ -65,8 +66,8 @@ if (isset($_SESSION['logged_in'])) {
             <i class="fa-solid fa-lock"></i>
             <input type="password" name="password" placeholder="Password" required>
         </div>
-        <button type="submit">Login</button>
-        <div>
+        <input type="submit" value="login" name="login">
+        <div class="noAccount">
         Don't have an account?<a href="register.php">Register Here</a>
         </div>
         </div>
