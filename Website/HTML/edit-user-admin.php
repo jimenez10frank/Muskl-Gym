@@ -31,10 +31,15 @@ if(isset($_POST['edit-user'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/body.css">
+    <link rel="stylesheet" href="../CSS/edit-users-admin.css">
     <title>Document</title>
 </head>
 <body>
-<h1>View Users Table</h1>
+<div class="logout">
+<i class="fa-sharp fa-solid fa-arrow-left"></i>
+    <a href="../HTML/view-users-admin.php">Go back to User List</a>
+</div>
 <div class="table-container">
     <h2 class="text-center mb-4">User List</h2>
     <table class="table table-bordered table-striped text-center">

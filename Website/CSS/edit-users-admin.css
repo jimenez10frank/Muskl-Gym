@@ -1,0 +1,87 @@
+/* General Styles */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table th {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 10px;
+
+}
+
+.table td {
+    background-color: #222222;
+    color: #ffffff;
+    padding: 8px;
+    border-bottom: 1px solid #444444;
+
+}
+
+.table tr:hover {
+    background-color: #333333;
+}
+
+.edit-field, .edit-select {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #444444;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    font-weight: 600;
+}
+
+
+.btn-primary {
+    background-color: #444444;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #666666;
+}
+.logout {
+    border: 1px solid white;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 3vh;
+    margin-left: 2vh;
+    color: rgb(255, 255, 255);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transition: 1s;
+}
+
+.logout:hover {
+    transform: scale(1.04);
+    box-shadow: rgb(59, 89, 121) 0px 20px 30px -10px;
+
+}
+
+.logout a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}

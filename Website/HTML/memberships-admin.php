@@ -27,10 +27,14 @@ if (isset($_GET['id'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/memberships-admin.css">
     <title>See membership Admin</title>
 </head>
 <body>
-    <h1>See all Memberships</h1>
+<div class="logout">
+<i class="fa-sharp fa-solid fa-arrow-left"></i>
+    <a href="../HTML/dashboard-admin.php">Go back to Dashboard</a>
+</div>
     <div class="table-container">
     <h2 class="text-center mb-4">Membership List</h2>
     <table>
