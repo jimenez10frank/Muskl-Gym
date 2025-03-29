@@ -28,9 +28,15 @@ if (isset($_GET['id'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/body.css">
+    <link rel="stylesheet" href="../CSS/view-messages.css">
     <title>View Messages</title>
 </head>
 <body>
+<div class="logout">
+<i class="fa-sharp fa-solid fa-arrow-left"></i>
+    <a href="../HTML/dashboard-admin.php">Go back to Dashboard</a>
+</div>
     <h1>See Contact Messages</h1>
     <div class="table-container">
     <h2 class="text-center mb-4">Messages List</h2>

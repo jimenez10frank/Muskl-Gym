@@ -74,7 +74,6 @@ $_SESSION['name'];
           </li>
         </ul>
         <div class="d-lg-flex col-lg-3 justify-content-lg-end">
-          <button class="btn btn-success">Get Membership Now!</button>
           <button class="btn btn-danger" onclick="window.location.href='../HTML/logout-user.php';">Logout</button>
         </div>
       </div>

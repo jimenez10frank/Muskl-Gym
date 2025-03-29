@@ -10,7 +10,6 @@
     justify-content: space-around;
   }
 
-  /* Footer sections */
   .footer-section {
     flex: 1 1 200px;
     padding: 20px;
@@ -23,7 +22,6 @@
     text-transform: uppercase;
   }
 
-  /* Links in footer */
   .footer-section a {
     display: block;
     color: black;
@@ -36,7 +34,6 @@
     color: lightblue;
   }
 
-  /* Social icons */
   .social-icons i {
     font-size: 2rem;
     margin: 0 10px;
@@ -46,8 +43,6 @@
   .social-icons i:hover {
     color: #42b983;
   }
-
-  /* Newsletter form */
   .newsletter form {
     display: flex;
     justify-content: center;
@@ -78,7 +73,6 @@
     background-color: #388e6e;
   }
 
-  /* Responsive adjustments */
   @media (max-width: 768px) {
     footer {
       flex-direction: column;

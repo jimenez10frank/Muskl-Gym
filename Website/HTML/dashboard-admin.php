@@ -9,7 +9,6 @@ if (!isset($_SESSION['logged_in'])) {
     header("Location: login-admin.php");
 }
 
-
 ?>
 
 
@@ -25,26 +24,19 @@ if (!isset($_SESSION['logged_in'])) {
 <body>
     <h1>Dashboard Admin</h1>
     <a href="../HTML/logout-admin.php">Logout</a>
-    <div class="amdmin-group">
-    <div class="admin">
-    <p>Here you can view all the users and their details</p>
-    <a href="../HTML/view-users-admin.php">View Users</a>
+    <div class="admin-group">
+        <div class="admin">
+            <p>Here you can view all the users and their details</p>
+            <a href="../HTML/view-users-admin.php">View Users</a>
+        </div>
+        <div class="admin">
+            <p>Here you can view all the contacts and their details</p>
+            <a href="../HTML/memberships-admin.php">View Memberships</a>
+        </div>
+        <div class="admin">
+            <p>Here you can view all the contacts and their details</p>
+            <a href="../HTML/view-messages.php">View Messages</a>
+        </div>
     </div>
-    <div class="admin">
-    <p>Here you can view all the contacts and their details</p>
-    <a href="../HTML/memberships-admin.php">View Memberships</a>
-    </div>
-    <div class="admin">
-    <p>Here you can view all the products and their details</p>
-    <a href="../HTML/view-products.php">View Products</a>
-    </div>
-    <div class="admin">
-    <p>Here you can view all the contacts and their details</p>
-    <a href="../HTML/view-messages.php">View Messages</a>
-    </div>
-    </div>
-
-
-
 </body>
 </html>

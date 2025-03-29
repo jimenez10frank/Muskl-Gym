@@ -1,6 +1,5 @@
-/* body css */
 html, body {
-    overflow-x: hidden; /* Prevents horizontal scrolling */
+    overflow-x: hidden; 
     width: 100%;
     height: 100%;
 }

@@ -42,10 +42,7 @@
             <a class="nav-link" href="../HTML/memberships.php">Memberships</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">The Gym</a>
+            <a class="nav-link" href="../HTML/gymLook.php">The Gym</a>
           </li>
           <!-- Dropdown Contact -->
           <li class="nav-item dropdown position-relative">
@@ -54,15 +51,14 @@
               Contact
             </a>
             <ul class="dropdown-menu" aria-labelledby="contactDropdown">
-              <li><a class="dropdown-item" href="#">Send us a message!</a></li>
-              <li><a class="dropdown-item" href="#">Our Location</a></li>
-              <li><a class="dropdown-item" href="#">FAQ</a></li>
+              <li><a class="dropdown-item" href="../HTML/contact.php">Send us a message!</a></li>
+              <li><a class="dropdown-item" href="../HTML/location.php">Our Location</a></li>
+              <li><a class="dropdown-item" href="../HTML/faq.php">FAQ</a></li>
             </ul>
           </li>
         </ul>
         <div class="d-lg-flex col-lg-3 justify-content-lg-end">
-          <button class="btn btn-success">Get Membership Now!</button>
-          <button class="btn btn-primary">Login</button>
+          <button class="btn btn-primary" onclick="window.location.href='../HTML/login-user.php'">Login</button>
         </div>
       </div>
     </div>
