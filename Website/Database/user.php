@@ -50,8 +50,16 @@ class User{
             ]
         );
     }
-    
-    
+
+    public function seeMembershipsFromUser($userId) {
+        // Query for all memberships belonging to this user
+        $stmt = $this->pdo->run("SELECT * FROM membership WHERE user_id = :user_id", [
+            ':user_id' => $userId
+        ]);
+        
+        // Fetch all results as an associative array
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
 }
 
 ?>

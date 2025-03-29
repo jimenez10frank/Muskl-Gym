@@ -35,7 +35,7 @@ $_SESSION['name'];
 
 <body>
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary rounded">
+<nav class="navbar navbar-expand-lg bg-body-tertiary rounded">
     <div class="container-fluid">
       <!-- Navbar Toggler -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -49,16 +49,10 @@ $_SESSION['name'];
         <a class="navbar-brand col-lg-3 me-0" href="#"><i class="fa-solid fa-person-running fa-2xl" id="logo"></i></a>
         <ul class="navbar-nav col-lg-6 justify-content-lg-center">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="../HTML/dashboard-user-memberships.php">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Memberships</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">The Gym</a>
+            <a class="nav-link active" href="../HTML/dashboard-user.php">Memberships</a>
           </li>
           <!-- Dropdown Contact -->
           <li class="nav-item dropdown position-relative">
@@ -67,9 +61,9 @@ $_SESSION['name'];
               Contact
             </a>
             <ul class="dropdown-menu" aria-labelledby="contactDropdown">
-              <li><a class="dropdown-item" href="#">Send us a message!</a></li>
-              <li><a class="dropdown-item" href="#">Our Location</a></li>
-              <li><a class="dropdown-item" href="#">FAQ</a></li>
+              <li><a class="dropdown-item" href="../HTML/contact.php">Send us a message!</a></li>
+              <li><a class="dropdown-item" href="../HTML/location.php">Our Location</a></li>
+              <li><a class="dropdown-item" href="../HTML/faq.php">FAQ</a></li>
             </ul>
           </li>
         </ul>
